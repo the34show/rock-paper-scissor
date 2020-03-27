@@ -48,6 +48,9 @@ $(document).ready(function(){
         if (result=="Player one wins"){
             document.getElementById("player1Result").style.backgroundColor = "green";
             document.getElementById("player2Result").style.backgroundColor = "white";
+        }else if(result=="Tie"){
+            document.getElementById("player2Result").style.backgroundColor = "green";
+            document.getElementById("player1Result").style.backgroundColor = "green";
         }else{
             document.getElementById("player2Result").style.backgroundColor = "green";
             document.getElementById("player1Result").style.backgroundColor = "white";
