@@ -1,0 +1,59 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2{
+	text-align: center;
+}
+h2{
+	padding-top: 10px;
+}
+h2 span{
+	background-color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	/*fix alignment here*/
+	border-radius: 10.5px;
+}
+.player{
+	padding-bottom: 10px;
+	background-color: grey;
+	border-radius: 10.5px;
+	margin-top: 20px;
+	margin-bottom: 20px
+	margin-right: 0;
+}
+.container{
+	text-align: center;
+	display: flex;
+	margin: 0px;
+	padding-bottom: 20px;
+}
+
+.container button{
+	background-color: white;
+	text-align: center;
+	
+ 	flex-grow: 1; /* default 0 */
+ 	margin-right: 20px;
+ 	margin-left: 20px;
+}
+.container button:nth-child(3){
+ 	margin-right: 40px;
+}
+.container button:nth-child(1){
+ 	margin-left: 40px;
+}
+
+.playerbtn{
+	text-align: center;
+}
+button{
+	font-size: x-large;
+	border-radius: 10.5px;
+}
+button:focus{
+	background-color: green;
+	outline: 0;
+	border-radius: 10.5px;
+}
