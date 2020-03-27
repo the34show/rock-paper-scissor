@@ -36,12 +36,22 @@ $(document).ready(function(){
         }else {
             scissor()
         }
-        console.log(result)
-        console.log("Player one:" + value1 +" Player two: "+ value2)
+
     }
 
     function winner(){
         tie()
+        console.log(result)
+        console.log("Player one:" + value1 +" Player two: "+ value2)
+        $("#player1Result").text("Player one: "+ value1 );
+        $("#player2Result").text("Player two: "+ value2 );
+        if (result=="Player one wins"){
+            document.getElementById("player1Result").style.backgroundColor = "green";
+            document.getElementById("player2Result").style.backgroundColor = "white";
+        }else{
+            document.getElementById("player2Result").style.backgroundColor = "green";
+            document.getElementById("player1Result").style.backgroundColor = "white";
+        }
         $(".button1").attr("disabled", false);
         $(".button2").attr("disabled", false);
 

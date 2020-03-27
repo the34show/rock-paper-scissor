@@ -15,7 +15,7 @@ h2 span{
 	/*fix alignment here*/
 	border-radius: 10.5px;
 }
-.player{
+.player, .stats{
 	padding-bottom: 10px;
 	background-color: grey;
 	border-radius: 10.5px;
@@ -23,20 +23,20 @@ h2 span{
 	margin-bottom: 20px
 	margin-right: 0;
 }
-.container{
+.container, .container1{
 	text-align: center;
 	display: flex;
 	margin: 0px;
 	padding-bottom: 20px;
 }
 
-.container button{
+.container div,button{
 	background-color: white;
 	text-align: center;
-	
  	flex-grow: 1; /* default 0 */
  	margin-right: 20px;
  	margin-left: 20px;
+ 	border-radius: 10.5px;
 }
 .container button:nth-child(3){
  	margin-right: 40px;
@@ -57,3 +57,11 @@ button:focus{
 	outline: 0;
 	border-radius: 10.5px;
 }
+
+.container1 div{
+	text-align: center;
+ 	flex-grow: 1; /* default 0 */
+ 	margin-right: 20px;
+ 	margin-left: 20px;
+}
+
