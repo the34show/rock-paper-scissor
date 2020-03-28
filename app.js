@@ -48,12 +48,16 @@ $(document).ready(function(){
         if (result=="Player one wins"){
             document.getElementById("player1Result").style.backgroundColor = "green";
             document.getElementById("player2Result").style.backgroundColor = "white";
+            var counter1 = Number($("#score1").html())+1;
+            $("#score1").html(counter1);
         }else if(result=="Tie"){
             document.getElementById("player2Result").style.backgroundColor = "green";
             document.getElementById("player1Result").style.backgroundColor = "green";
         }else{
             document.getElementById("player2Result").style.backgroundColor = "green";
             document.getElementById("player1Result").style.backgroundColor = "white";
+            var counter2 = Number($("#score2").html())+1;
+            $("#score2").html(counter2);
         }
         $(".button1").attr("disabled", false);
         $(".button2").attr("disabled", false);
