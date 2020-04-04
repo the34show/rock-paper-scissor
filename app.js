@@ -1,7 +1,11 @@
+var current_player ="Player"
+var moves=["rock","paper","scissor"]
+var value2
+
 $(document).ready(function(){
     var value1
-    var value2
     var result
+    
 
     function rock(){
         if(value2=="scissor"){
@@ -61,6 +65,7 @@ $(document).ready(function(){
         }
         $(".button1").attr("disabled", false);
         $(".button2").attr("disabled", false);
+        computerChange()
 
     }
 	
@@ -71,8 +76,12 @@ $(document).ready(function(){
         value1 = buttonClick.val();
        
         $(".button1").attr("disabled", true);
+        if (current_player=="Computer"){
+            winner()
+           }
         return value1;
     });
+    //write some logic here about if computer player hten do this
     $(".button2").click(function(){
         var buttonClick=$(this)
         value2 = buttonClick.val();
@@ -81,11 +90,30 @@ $(document).ready(function(){
         return value2;
     });
 
+    
+
+    
+
     $(".submit").click(winner)
 
 });
 
-        //compare the two values
-        //same play again html
-        // different then RS, SP, PR P1 wins
-        /// else p2 wins
+function computerChange(){
+        var computer = document.getElementById("computer");
+        current_player = computer.options[computer.selectedIndex].text;
+            if (current_player=="Computer"){
+                $(".button2").attr("disabled", true)
+                $(".submit").attr("disabled", true)
+                value2= moves[Math.floor(Math.random() * 3)]
+            }
+            else{
+               $(".button2").attr("disabled", false)
+               $(".submit").attr("disabled", false);
+               value2=""
+        }
+               
+       // console.log(value2)
+               
+    }
+
+            
