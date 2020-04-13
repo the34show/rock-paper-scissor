@@ -42,16 +42,8 @@ body{
 h1,h2{
 	text-align: center;
 }
-h2{
-	padding-top: 10px;
-}
-h2 span{
-	background-color: white;
-	padding-left: 10px;
-	padding-right: 10px;
-	/*fix alignment here*/
-	border-radius: 10.5px;
-}
+
+
 .player, .stats{
 	padding-bottom: 10px;
 	background-color: grey;
@@ -60,31 +52,19 @@ h2 span{
 	margin-bottom: 20px
 	margin-right: 0;
 }
-.container, .container1{
+.container{
 	text-align: center;
 	display: flex;
-	margin: 0px;
-	padding-bottom: 20px;
+
+}
+.box1, .box2, .box3{
+	height:100%;
+	width:100%;
 }
 
-.container div,button{
-	background-color: white;
-	text-align: center;
- 	flex-grow: 1; /* default 0 */
- 	margin-right: 20px;
- 	margin-left: 20px;
- 	border-radius: 10.5px;
-}
-.container button:nth-child(3){
- 	margin-right: 40px;
-}
-.container button:nth-child(1){
- 	margin-left: 40px;
-}
 
-.playerbtn{
-	text-align: center;
-}
+
+/*Button Styles*/
 button{
 	font-size: x-large;
 	border-radius: 10.5px;
@@ -95,10 +75,10 @@ button:focus{
 	border-radius: 10.5px;
 }
 
-.container1 div{
-	text-align: center;
- 	flex-grow: 1; /* default 0 */
- 	margin-right: 20px;
- 	margin-left: 20px;
+/*image styling*/
+img {
+  max-width: 40%;
+  height: auto;
+  padding-top: 10px;
 }
 

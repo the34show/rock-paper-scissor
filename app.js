@@ -74,6 +74,7 @@ $(document).ready(function(){
         //save 
     	var buttonClick=$(this)
         value1 = buttonClick.val();
+        console.log(value1)
        
         $(".button1").attr("disabled", true);
         if (current_player=="Computer"){

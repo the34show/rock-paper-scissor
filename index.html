@@ -1,74 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Rock Paper Scissors</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
-    
-    
+	<title>Rock Paper Scissors</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="new_style.css">
 </head>
 <body>
+	<ul>
+        <li class="active"><a href="index.html">Newest Version</a></li>
+        <li ><a href="old_index.html" >Original</a></li>
+        <li><a href="https://www.figma.com/file/7QM3Pyl1hZ31duaggPhqnP/Rock-Paper-Scissors?node-id=0%3A1" target="_blank">Mock Up</a></li>
+        <li class="right"><a href="https://www.linkedin.com/in/albert-hung-82a146124/" target="_blank">Veiw Creator</a></li>
+    </ul>
     <h1>Rock Paper Scissors</h1>
-    <div class="player" id="player1">
-        <h2><span> Player 1 </span></h2>
+    <div class="container">
+	    <div class="box1">
+	    	<h2>Player 1</h2>
+	    	<div class="rock">
+	    		<img src="images/rock.png" alt="Rock">
+	    		<br>
+	    		<button type="button" class="button1" value="rock">Rock</button>          
+	    	</div>
+	    	<div class="paper"> 
+	    		<img src="images/paper.png" alt="Paper">
+	    		<br>
+	    		<button type="button" class="button1" value="paper">Paper</button>
+	    	</div>
+	    	<div class="scissor"> 
+	    		<img src="images/scissor.png" alt="Scissor">
+	    		<br>
+	    		<button type="button" class="button1" value="scissor">Scissor</button>
+	    	<input type="image" class="button1" alt="test" src="images/scissor.png" value="scissor">	
+	    	</div>
+	    </div>
 
-        <div class="container" >
-            <button type="button" class="button1" value="rock" >Rock</button>
-        	<button type="button" class="button1" value="paper" >Paper</button>
-            <button type="button" class="button1" value="scissor" >Scissor</button>
-        </div>
+	    <div class="box2">
+	    	
+	    </div>
+
+	    <div class="box3">
+	    	<h2>Player 2</h2>
+	    	<div class="rock">
+	    		<img src="images/rock.png" alt="Rock">
+	    		<br>
+	    		<button type="button" class="button2" value="rock">Rock</button>          
+	    	</div>
+	    	<div class="paper">
+	    		<img src="images/paper.png" alt="Paper"> 
+	    		<br>
+	    		<button type="button" class="button2" value="paper">Paper</button>
+	    	</div>
+	    	<div class="scissor">
+	    		<img src="images/scissor.png" alt="Scissor"> 
+	    		<br>
+	    		<button type="button" class="button2" value="scissor">Scissor</button>
+	    	</div>
+	    </div>
     </div>
-
-    <div class="player" id="player2">
-        <h2><span>Player 2</span></h2>
-
-        <div class="container" >
-            <button type="button" class="button2" value="rock">Rock</button>
-            <button type="button" class="button2" value="paper">Paper</button>
-            <button type="button" class="button2" value="scissor">Scissor</button>
-        </div>
-        
-    </div>
-
-    <div class="playerbtn">
-            <button type="button" class="submit">Submit</button>
-            <select id="computer" onchange="computerChange()">
-              <option value="Player">Player</option>
-              <option value="Computer">Computer</option>
-            </select>
-    </div>
-    <div class="container1">
-        <div class="stats" id="results">
-            <h2>Result</h2>
-            <div class="container">
-                <div id="player1Result"> Player One 
-                </div>
-                <div id="player2Result"> Player Two 
-                </div>
-            </div>
-        </div>
-        <div class="stats" id="score">
-            <h2>Score</h2>
-            <div class="container">
-                <div> Player One
-                    <div id="score1">0</div>
-                </div>
-                <div> Player Two 
-                    <div id="score2">0</div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
     
-    
-
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+<script src="app.js"></script>
 </body>
 
 </html>
