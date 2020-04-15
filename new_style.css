@@ -1,10 +1,13 @@
+/*color link
+https://coolors.co/e2d5b3-90b494-ffffff-000000-c0afa0*/
+
 /*navbar css*/
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #A9927D;
   margin: 0px;
 }
 
@@ -14,7 +17,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -22,10 +25,10 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #8B7867;
 }
 .active {
-  background-color: #4CAF50;
+  background-color: #DCCCA3;
 }
 .right {
 	float: right;
@@ -36,9 +39,12 @@ li a:hover {
 body{
 	font-family: 'Open Sans', sans-serif;
 	margin: 0px;
+	background-color: #C0AFA0;
 }
 
-
+h1{
+	background-color: #DCCCA3;
+}
 h1,h2{
 	text-align: center;
 }
@@ -46,39 +52,71 @@ h1,h2{
 
 .player, .stats{
 	padding-bottom: 10px;
-	background-color: grey;
+	background-color: #E2D5B3;
 	border-radius: 10.5px;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	margin-bottom: 20px
 	margin-right: 0;
 }
-.container{
+.players{
+	padding: 10px;
+	position: relative;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.container {
 	text-align: center;
 	display: flex;
-
 }
+
 .box1, .box2, .box3{
 	height:100%;
 	width:100%;
+	border-radius: 10.5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.box1> div, .box3 > div{
+	 padding-bottom: 10px;
+}
+.box1, .box3{
+	background-color: #DCCCA3;
 }
 
-
-
-/*Button Styles*/
+/*button Styles*/
 button{
 	font-size: x-large;
 	border-radius: 10.5px;
 }
 button:focus{
-	background-color: green;
+	background-color: #90B494;
 	outline: 0;
 	border-radius: 10.5px;
 }
 
-/*image styling*/
-img {
-  max-width: 40%;
+/*input styling*/
+
+input {
+  max-width: 30%;
   height: auto;
-  padding-top: 10px;
+  background-color: white;
+  border-radius: 10.5px;
+  padding: 10px;	
+}
+
+/*results styling*/
+
+#player1Result, #player2Result{
+	border-radius: 10.5px;
+}
+
+.result{
+	margin-bottom: 0px;
+}
+h3{
+	margin-top: 0px;
+	padding-bottom: 20px;
 }
 

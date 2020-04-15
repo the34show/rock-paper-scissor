@@ -1,6 +1,7 @@
 var current_player ="Player"
 var moves=["rock","paper","scissor"]
 var value2
+var test = document.createElement("IMG")
 
 $(document).ready(function(){
     var value1
@@ -47,18 +48,18 @@ $(document).ready(function(){
         tie()
         console.log(result)
         console.log("Player one:" + value1 +" Player two: "+ value2)
-        $("#player1Result").text("Player one: "+ value1 );
-        $("#player2Result").text("Player two: "+ value2 );
+        $("#player1Result").html('<img src="images/'+value1+'.png" alt='+value1+' style= "max-width: 100%">');
+        $("#player2Result").html('<img src="images/'+value2+'.png" alt='+value2+' style= "max-width: 100%">');
         if (result=="Player one wins"){
-            document.getElementById("player1Result").style.backgroundColor = "green";
+            document.getElementById("player1Result").style.backgroundColor = "#90B494";
             document.getElementById("player2Result").style.backgroundColor = "white";
             var counter1 = Number($("#score1").html())+1;
             $("#score1").html(counter1);
         }else if(result=="Tie"){
-            document.getElementById("player2Result").style.backgroundColor = "green";
-            document.getElementById("player1Result").style.backgroundColor = "green";
+            document.getElementById("player2Result").style.backgroundColor = "#90B494";
+            document.getElementById("player1Result").style.backgroundColor = "#90B494";
         }else{
-            document.getElementById("player2Result").style.backgroundColor = "green";
+            document.getElementById("player2Result").style.backgroundColor = "#90B494";
             document.getElementById("player1Result").style.backgroundColor = "white";
             var counter2 = Number($("#score2").html())+1;
             $("#score2").html(counter2);
@@ -74,7 +75,6 @@ $(document).ready(function(){
         //save 
     	var buttonClick=$(this)
         value1 = buttonClick.val();
-        console.log(value1)
        
         $(".button1").attr("disabled", true);
         if (current_player=="Computer"){
