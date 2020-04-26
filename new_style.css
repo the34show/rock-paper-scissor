@@ -29,6 +29,7 @@ li a:hover {
 }
 .active {
   background-color: #DCCCA3;
+  font-weight: bold;
 }
 .right {
 	float: right;
@@ -42,8 +43,10 @@ body{
 	background-color: #C0AFA0;
 }
 
-h1{
+.Title{
 	background-color: #DCCCA3;
+	border-radius: 10.5px;
+	padding: 10px;
 }
 h1,h2{
 	text-align: center;
@@ -58,12 +61,8 @@ h1,h2{
 	margin-bottom: 20px
 	margin-right: 0;
 }
-.players{
-	padding: 10px;
-	position: relative;
-	margin-left: 10%;
-	margin-right: 10%;
-}
+
+
 
 .container {
 	text-align: center;
@@ -71,6 +70,7 @@ h1,h2{
 }
 
 .box1, .box2, .box3{
+
 	height:100%;
 	width:100%;
 	border-radius: 10.5px;
@@ -84,6 +84,8 @@ h1,h2{
 .box1, .box3{
 	background-color: #DCCCA3;
 }
+
+
 
 /*button Styles*/
 button{
@@ -110,13 +112,41 @@ input {
 
 #player1Result, #player2Result{
 	border-radius: 10.5px;
+	padding-top: 5%; 
+	padding-bottom: 5%;
+
 }
 
-.result{
+
+.result_header{
 	margin-bottom: 0px;
 }
+
 h3{
 	margin-top: 0px;
-	padding-bottom: 20px;
-}
 
+}
+#results{
+	min-height: 200px;
+}
+.players{
+	padding: 10px;
+	position: relative;
+	flex-grow:1;
+
+}
+/*Score styling*/
+.score{
+	font-size: x-large;
+}
+/*Playerbtn styling*/
+.playerbtn{
+	margin-top: 20px;
+	text-align: center;
+}
+#computer{
+	font-size: x-large;
+	display: inline-block;
+	margin-left: 20px;
+	padding-left: 1px;
+}

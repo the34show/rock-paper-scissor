@@ -1,4 +1,4 @@
-var current_player ="Player"
+var current_player ="Computer"
 var moves=["rock","paper","scissor"]
 var value2
 var test = document.createElement("IMG")
@@ -6,7 +6,10 @@ var test = document.createElement("IMG")
 $(document).ready(function(){
     var value1
     var result
-    
+    // disables player2 buttons
+    $(".button2").attr("disabled", true)
+    $(".submit").attr("disabled", true)
+    value2= moves[Math.floor(Math.random() * 3)]
 
     function rock(){
         if(value2=="scissor"){
@@ -48,8 +51,8 @@ $(document).ready(function(){
         tie()
         console.log(result)
         console.log("Player one:" + value1 +" Player two: "+ value2)
-        $("#player1Result").html('<img src="images/'+value1+'.png" alt='+value1+' style= "max-width: 100%">');
-        $("#player2Result").html('<img src="images/'+value2+'.png" alt='+value2+' style= "max-width: 100%">');
+        $("#player1Result").html('<img src="images/'+value1+'.png" alt='+value1+' style= "max-width: 35%">');
+        $("#player2Result").html('<img src="images/'+value2+'.png" alt='+value2+' style= "max-width: 35%">');
         if (result=="Player one wins"){
             document.getElementById("player1Result").style.backgroundColor = "#90B494";
             document.getElementById("player2Result").style.backgroundColor = "white";

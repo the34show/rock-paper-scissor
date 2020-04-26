@@ -12,7 +12,7 @@
         <li><a href="https://www.figma.com/file/7QM3Pyl1hZ31duaggPhqnP/Rock-Paper-Scissors?node-id=0%3A1" target="_blank">Mock Up</a></li>
         <li class="right"><a href="https://www.linkedin.com/in/albert-hung-82a146124/" target="_blank">Veiw Creator</a></li>
     </ul>
-    <h1>Rock Paper Scissors</h1>
+    <h1><span class="Title">Rock Paper Scissors</span></h1>
     <div class="container">
 	    <div class="box1">
 	    	<h2>Player 1</h2>
@@ -34,44 +34,42 @@
 	    </div>
 
 	    <div class="box2">
+			<div class="stats" id="results">
+				<h2 class="result_header">Result</h2>
+					<div class="container">
+						<div class="players">
+							<h3 class="result"> Player One </h3>
+							<div id="player1Result"> 
+							</div> 
+						</div>
+							
+						<div class="players">
+							<h3 class="result"> Player Two </h3>
+							<div id="player2Result"> 
+							</div> 
+						</div>
+					</div>
+			</div>
+			<div class="stats" id="score">
+				<h2 class="result_header">Current Score</h2>
+				<div class="container">
+					<div class="players"> 
+						<h3 class="result"> Player One </h3>
+					    <div class="score" id="score1">0</div>
+					</div>
+					<div class="players"> 
+						<h3 class="result"> Player Two </h3>
+					    <div class="score" id="score2">0</div>
+					</div>
+				</div>
+			</div>
 			<div class="playerbtn">
 				<button type="button" class="submit">Submit</button>
 				<select id="computer" onchange="computerChange()">
-				<option value="Player">Player</option>
-				<option value="Computer">Computer</option>
+					<option value="Computer">Computer</option>
+					<option value="Player">Player</option>				
 				</select>
-			</div>
-			<div class="container1">
-				<div class="stats" id="results">
-					<h2 class="result">Result</h2>
-						<div class="container">
-							<div class="players">
-								<h3 class="result"> Player One </h3>
-								<div id="player1Result"> 
-								</div> 
-							</div>
-								
-							<div class="players">
-								<h3 class="result"> Player Two </h3>
-								<div id="player2Result"> 
-								</div> 
-							</div>
-						</div>
-				</div>
-					<div class="stats" id="score">
-						<h2>Score</h2>
-						<div class="container">
-							<div> Player One
-							    <div id="score1">0</div>
-							</div>
-							<div> Player Two 
-							    <div id="score2">0</div>
-							</div>
-					</div>
-				</div>
-
-			</div>
-	    	
+			</div>    	
 	    </div>
 
 	    <div class="box3">
